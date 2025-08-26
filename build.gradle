@@ -41,7 +41,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Jankson for config
-	include "blue.endless:jankson:5.0.1"
+	modImplementation "blue.endless:jankson:5.0.1"
 	
 }
 
