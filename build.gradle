@@ -17,6 +17,9 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	mavenCentral()
+	flatDir {
+		dirs 'src/main/resources/META-INF/jars'
+	}
 }
 
 loom {
@@ -39,7 +42,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "blue.endless:jankson:1.2.3"
+	modImplementation name: 'jankson-1.2.3'
 }
 
 processResources {
