@@ -23,9 +23,9 @@
     "ring_of_repair.mixins.json"
   ],
   "depends": {
-    "fabricloader": "\u003e\u003d0.15.11",
+    "fabricloader": "0.17.2",
     "fabric": "*",
     "minecraft": "~1.21.4",
-    "java": "\u003e\u003d21"
+    "java": "21"
   }
 }
