@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "ring-of-repair:item/ring_of_repair"
-  }
-}
