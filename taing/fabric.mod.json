@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "ring_of_repair",
-  "version": "${version}",
+  "version": "1.3.7",
   "name": "Ring Of Repair",
   "description": "Slowly repairs an item inventory",
   "authors": [
@@ -12,11 +12,11 @@
     "sources": ""
   },
   "license": "MIT",
-  
+  "icon": "assets/ring_of_repair/textures/item/ring_of_repair.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.chuong.ring.rp.RingOfRepair"
+      "com.kwpugh.ring_of_repair.RingOfRepair"
     ]
   },
   "mixins": [
@@ -25,7 +25,15 @@
   "depends": {
     "fabricloader": "\u003e\u003d0.15.11",
     "fabric": "*",
-    "minecraft": "~1.21.4",
+    "minecraft": "1.21.x",
     "java": "\u003e\u003d21"
-  }
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/jankson-1.2.3.jar"
+    }
+  ]
 }
