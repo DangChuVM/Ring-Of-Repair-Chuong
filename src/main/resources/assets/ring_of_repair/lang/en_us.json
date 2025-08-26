@@ -1,0 +1,10 @@
+{
+	"item.ring_of_repair.ring_of_repair": "Ring of Repair",
+
+	"item.ring_of_repair.ring_of_repair.tip1": "Slowly repairs damaged items in player inventory",
+	"item.ring_of_repair.ring_of_repair.tip2": "Works while ring is in player inventory or enderchest",
+
+	"tag.item.ring_of_repair.ring_repair_blacklist": "List of items to exclude from repair",
+
+	"itemGroup.ring_of_repair.ring_repair_group": "Ring of Repair"
+}
