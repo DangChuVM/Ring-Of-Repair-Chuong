@@ -3,15 +3,15 @@
 	"id": "ring-of-repair",
 	"version": "${version}",
 	"name": "Ring Of Repair",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A ring that slowly repairs your items.",
 	"authors": [
-		"Me!"
+		"DangChuVM"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/DangChuVM/Ring-Of-Repair-Chuong",
+		"sources": "https://github.com/DangChuVM/Ring-Of-Repair-Chuong"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/ring-of-repair/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"com.chuong.ring.rp.RingOfRepairClient"
+		],
+		"modmenu": [
+			"com.chuong.ring.rp.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
@@ -33,9 +36,10 @@
 		"fabricloader": ">=0.17.2",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cloth-config": ">=16.0.124"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"modmenu": ">=12.0.1"
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "item.ring-of-repair.ring_of_repair": "Ring of Repair",
+  "title.ring_of_repair.config": "Ring of Repair Config",
+  "category.ring_of_repair.general": "General",
+  "option.ring_of_repair.repairIntervalSeconds": "Repair Interval (seconds)",
+  "tooltip.ring_of_repair.repairIntervalSeconds": "The time in seconds it takes to repair 1 durability point. Min: 0.1, Max: 5.0"
+}

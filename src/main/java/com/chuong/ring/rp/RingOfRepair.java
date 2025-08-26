@@ -1,24 +1,29 @@
 package com.chuong.ring.rp;
 
+import com.chuong.ring.rp.config.RingOfRepairConfig;
+import com.chuong.ring.rp.item.RingOfRepairItem;
 import net.fabricmc.api.ModInitializer;
-
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class RingOfRepair implements ModInitializer {
-	public static final String MOD_ID = "ring-of-repair";
+    public static final String MOD_ID = "ring-of-repair";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static RingOfRepairConfig CONFIG;
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+    public static final Item RING_OF_REPAIR = new RingOfRepairItem(new Item.Settings());
 
-		LOGGER.info("Hello Fabric world!");
-	}
+    @Override
+    public void onInitialize() {
+        LOGGER.info("Initializing Ring of Repair");
+
+        CONFIG = RingOfRepairConfig.load();
+
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "ring_of_repair"), RING_OF_REPAIR);
+    }
 }
